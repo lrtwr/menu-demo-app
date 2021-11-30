@@ -1,0 +1,22 @@
+<style>
+  /* .dropdown-menu li{ position: relative; 	} */
+  li.aaa:hover > ul.submenu{display: block;right:100%; left:auto;
+    position: absolute;
+		left:100%; top:100%;}
+
+
+</style>
+
+
+<li class="aaa">
+  <a class="dropdown-item" href="#">{{title}} &raquo;</a>
+  <div class="dropdown-divider"></div>
+<ul class="submenu dropdown-menu">
+  <li>
+      <ng-content></ng-content>
+  </li>
+</ul>
+</li>
+
+
+

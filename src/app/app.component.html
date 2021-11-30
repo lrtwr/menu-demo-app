@@ -1,33 +1,70 @@
-<app-menu-item [menuFor]="main">Click Me</app-menu-item>
+<app-main-menu>
+  <app-menu-item>Vehicles</app-menu-item>
+  <app-menu-item>Bikes</app-menu-item>
+  <app-dropdown-menu [title]="'Vehicles'">
+    <app-dropdown-menu-item>Cars</app-dropdown-menu-item>
+    <app-dropdown-menu-item>Bushes</app-dropdown-menu-item>
+    <app-dropdown-menu-item>Trucks</app-dropdown-menu-item>
+    <app-dropdown-submenu [title]="'Roads'">
+      <app-dropdown-menu-item>Race</app-dropdown-menu-item>
+      <app-dropdown-menu-item>Gravel</app-dropdown-menu-item>
+      <app-dropdown-menu-item>Aero</app-dropdown-menu-item>
+      <app-dropdown-menu-item>Time Trial</app-dropdown-menu-item>
+    </app-dropdown-submenu>
+  </app-dropdown-menu>
+  <app-dropdown-menu [title]="'Bikes'">
+  <app-dropdown-submenu [title]="'Roads'">
+    <app-dropdown-menu-item>Race</app-dropdown-menu-item>
+    <app-dropdown-menu-item>Gravel</app-dropdown-menu-item>
+    <app-dropdown-menu-item>Aero</app-dropdown-menu-item>
+    <app-dropdown-menu-item>Time Trial</app-dropdown-menu-item>
+  </app-dropdown-submenu>
+    <app-dropdown-menu-item>MTB</app-dropdown-menu-item>
+    <app-dropdown-menu-item>City</app-dropdown-menu-item>
+  </app-dropdown-menu>
+</app-main-menu>
+
+
+<app-test-area></app-test-area>
+
+
+
+
+
+<!-- <app-cursusmenu-item [menuFor]="main">Click Me</app-cursusmenu-item>
 
 <ng-template #main>
-  <app-menu>
-    <app-menu-item [menuFor]="vehicles">Vehicles</app-menu-item>
-    <app-menu-item [menuFor]="bikes">Bikes</app-menu-item>
-  </app-menu>
+  <app-cursusmenu>
+    <app-cursusmenu-item [menuFor]="vehicles">Vehicles</app-cursusmenu-item>
+    <app-cursusmenu-item [menuFor]="bikes">Bikes</app-cursusmenu-item>
+  </app-cursusmenu>
 </ng-template>
 
 <ng-template #vehicles>
-  <app-menu>
-    <app-menu-item>Cars</app-menu-item>
-    <app-menu-item>Buses</app-menu-item>
-    <app-menu-item>Trucks</app-menu-item>
-  </app-menu>
+  <app-cursusmenu>
+    <app-cursusmenu-item>Cars</app-cursusmenu-item>
+    <app-cursusmenu-item>Buses</app-cursusmenu-item>
+    <app-cursusmenu-item>Trucks</app-cursusmenu-item>
+  </app-cursusmenu>
 </ng-template>
 
 <ng-template #bikes>
-  <app-menu>
-    <app-menu-item [menuFor]="roadBikes">Road</app-menu-item>
-    <app-menu-item>MTB</app-menu-item>
-    <app-menu-item>City</app-menu-item>
-  </app-menu>
+  <app-cursusmenu>
+    <app-cursusmenu-item [menuFor]="roadBikes">Road</app-cursusmenu-item>
+    <app-cursusmenu-item>MTB</app-cursusmenu-item>
+    <app-cursusmenu-item>City</app-cursusmenu-item>
+  </app-cursusmenu>
 </ng-template>
 
 <ng-template #roadBikes>
-  <app-menu>
-    <app-menu-item>Race</app-menu-item>
-    <app-menu-item>Gravel</app-menu-item>
-    <app-menu-item>Aero</app-menu-item>
-    <app-menu-item>Time Trial</app-menu-item>
-  </app-menu>
-</ng-template>
+  <app-cursusmenu>
+    <app-cursusmenu-item>Race</app-cursusmenu-item>
+    <app-cursusmenu-item>Gravel</app-cursusmenu-item>
+    <app-cursusmenu-item>Aero</app-cursusmenu-item>
+    <app-cursusmenu-item>Time Trial</app-cursusmenu-item>
+  </app-cursusmenu>
+</ng-template> -->
+
+
+
+

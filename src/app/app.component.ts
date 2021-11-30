@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+
 declare var $: any;  
 
 @Component({
@@ -10,10 +11,17 @@ export class AppComponent implements  OnInit{
   title = 'menu-demo-app';
 
 ngOnInit(){
-  // $('button').click()
-  // {
-  //   alert('gedrukt')
-  // }
+
+  $(function () {
+    $('[data-toggle="popover"]').popover()
+  })
+
+  $(function () {
+    $('.example-popover').popover({
+      container: 'body'
+    })
+  })
 }
+
 
 }

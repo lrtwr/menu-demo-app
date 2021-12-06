@@ -6,7 +6,9 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./logo.component.css']
 })
 export class LogoComponent implements OnInit {
-  @Input() classId: string | undefined ="";
+  @Input() classId: string | undefined;
+  @Input() style: string | undefined;
+  @Input() id: string | undefined;
   constructor() { }
 
   ngOnInit(): void {

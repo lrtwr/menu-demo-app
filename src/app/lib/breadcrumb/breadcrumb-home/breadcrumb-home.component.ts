@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'lt-breadcrumb-home',
@@ -6,7 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./breadcrumb-home.component.css']
 })
 export class BreadcrumbHomeComponent implements OnInit {
-
+  @Input() classId: string | undefined;
+  @Input() style: string | undefined;
+  @Input() id: string | undefined;
   constructor() { }
 
   ngOnInit(): void {

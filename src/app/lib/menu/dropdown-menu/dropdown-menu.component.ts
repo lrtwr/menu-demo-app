@@ -7,8 +7,10 @@ import { Component, OnInit, Input} from '@angular/core';
 })
 export class DropdownMenuComponent implements OnInit {
   @Input() title: string | undefined;
-  @Input() classId: string | undefined ="";
-  constructor() { }
+  @Input() classId: string | undefined;
+  @Input() style: string | undefined;
+  @Input() id: string | undefined;
+ constructor() { }
 
   ngOnInit(): void {
   }

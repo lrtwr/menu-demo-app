@@ -7,8 +7,7 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { ContentComponent } from './content/content.component';
 import { BreadcrumbModule } from './lib/breadcrumb/breadcrumb.module';
-import { GridContainerComponent } from './later/menu/dropdown-menu/grid-container/grid-container.component';
-import { GridContainerModule } from './later/menu/dropdown-menu/grid-container/grid-container.module';
+import { GridContainerModule } from './lib/grid-container/grid-container.module';
 
 @NgModule({
   declarations: [
@@ -16,7 +15,6 @@ import { GridContainerModule } from './later/menu/dropdown-menu/grid-container/g
     HeaderComponent,
     FooterComponent,
     ContentComponent,
-    GridContainerComponent
   ],
   imports: [
     BrowserModule,

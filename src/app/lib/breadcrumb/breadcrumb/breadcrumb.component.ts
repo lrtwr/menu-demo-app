@@ -6,7 +6,9 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./breadcrumb.component.css']
 })
 export class BreadcrumbComponent implements OnInit {
-@Input() classId: string | undefined;
+  @Input() classId: string | undefined;
+  @Input() style: string | undefined;
+  @Input() id: string | undefined;
   constructor() { }
 
   ngOnInit(): void {

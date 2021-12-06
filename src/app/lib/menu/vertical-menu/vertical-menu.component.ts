@@ -6,8 +6,10 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./vertical-menu.component.css']
 })
 export class VerticalMenuComponent implements OnInit {
-  @Input() classId: string | undefined ="jeroen";
-  constructor() { }
+  @Input() classId: string | undefined;
+  @Input() style: string | undefined;
+  @Input() id: string | undefined;
+constructor() { }
 
   ngOnInit(): void {
   }

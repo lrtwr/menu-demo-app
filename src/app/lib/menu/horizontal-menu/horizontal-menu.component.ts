@@ -8,8 +8,10 @@ declare var $: any;
 })
 export class HorizontalMenuComponent implements OnInit {
   // @Input() title: string | undefined;
-  @Input() classId: string | undefined ="";
-  constructor() { }
+  @Input() classId: string | undefined;
+  @Input() style: string | undefined;
+  @Input() id: string | undefined;
+ constructor() { }
 
   ngOnInit(): void {
 

@@ -9,25 +9,39 @@
 }
 
 .nav-link{
-  color:rgb(255, 255, 255)
+  color:rgb(109, 58, 58)
 }
 
-.HorMenu-verticalmenu{}
-.HorMenu-horizontalmenu{}
-.HorMenu-menuitem{}
-.HorMenu-submenuitem{}
+.HorMenu-submenu-item{
+  color: rgb(255, 255, 255);
+}
+
+.HorMenu-menu-item{
+  color: rgb(255, 255, 255);
+}
 .HorMenu-submenu{
+  background: rgb(6, 2, 22);
+}
+.HorMenu-dropdown-menu{
+  background: rgb(65, 24, 24);
+}
+
+.VerMenu-submenu{
   background: rgb(6, 2, 22);
   color: rgb(255, 255, 255);
 }
-.HorMenu-dropdownmenu{}
 
-.HorMenu-dropdownmenu{
+.VerMenu-dropdown-menu{
   background: rgb(65, 24, 24);
-  color: rgb(255, 255, 255);
 }
 
+.VerMenu-submenu-item{
+  color: rgb(18, 63, 46);
+}
 
+.VerMenu-menu-item{
+  color: rgb(58, 22, 22);
+}
 
 
 

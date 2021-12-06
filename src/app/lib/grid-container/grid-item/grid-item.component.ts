@@ -1,11 +1,11 @@
 import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
-  selector: 'lt-menu-item',
-  templateUrl: './menu-item.component.html',
-  styleUrls: ['./menu-item.component.css']
+  selector: 'lt-grid-item',
+  templateUrl: './grid-item.component.html',
+  styleUrls: ['./grid-item.component.css']
 })
-export class MenuItemComponent implements OnInit {
+export class GridItemComponent implements OnInit {
   @Input() classId: string | undefined;
   @Input() style: string | undefined;
   @Input() id: string | undefined;

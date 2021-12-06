@@ -1,10 +1,7 @@
 <div id="container">
-  <lt-grid-container [widths]="'200px 100px 300px'">
-    <lt-grid-item>qwe qweqweqwe qweqweqweqweqweqw eqweqweqweqweqwe qweqweqweqweqweqwe qweqweqweqwewq eqweqweqweqw qew</lt-grid-item>
-    <lt-grid-item>rtyrtyrtyyrtryrty rtyrtyrtyrtyrtyrt ytrytryrtytryrtyrt yrtyrtyrtyrtytry tryrtytryrtyryrtyrt ytrytry</lt-grid-item>
-    <lt-grid-item>rtyrtyrtyrtyrtyrt ytrytrytryrtyrtyrt yrtyrtyrtytrytr yrtytryrtyrtyrtytr ytryrty tr ytryttry try try try trytryrt</lt-grid-item>
-  </lt-grid-container>
+
 <header></header>
+
 <lt-vertical-menu [classId]="'VerMenu'">
 <lt-logo>Logo</lt-logo>
 
@@ -12,7 +9,7 @@
   <lt-menu-item [classId]="'VerMenu'">Link A</lt-menu-item>
   <lt-menu-item [classId]="'VerMenu'">Link B</lt-menu-item>
 
-  <lt-submenu [classId]="'VerMenu'" [title]="'Eerste Menu'">
+  <lt-main-submenu [classId]="'VerMenu'" [title]="'Eerste Menu'">
     <lt-submenu-item [classId]="'VerMenu'">Link C</lt-submenu-item>
     <lt-submenu-item [classId]="'VerMenu'">Link D</lt-submenu-item>
     <lt-submenu [classId]="'VerMenu'" [title]="'Tweede Menu'">
@@ -23,6 +20,12 @@
       <lt-submenu-item [classId]="'VerMenu'">Link G</lt-submenu-item>
       <lt-submenu-item [classId]="'VerMenu'">Link H</lt-submenu-item>
     </lt-submenu>
-  </lt-submenu>
+  </lt-main-submenu>
 </lt-vertical-menu>
+
+<lt-grid-container [widths]="'200px 100px 300px'" [gap]="'40px'">
+  <lt-grid-item>qwe qweqweqwe qweqweqweqweqweqw eqweqweqweqweqwe qweqweqweqweqweqwe qweqweqweqwewq eqweqweqweqw qew</lt-grid-item>
+  <lt-grid-item>rtyrtyrtyyrtryrty rtyrtyrtyrtyrtyrt ytrytryrtytryrtyrt yrtyrtyrtyrtytry tryrtytryrtyryrtyrt ytrytry</lt-grid-item>
+  <lt-grid-item>rtyrtyrtyrtyrtyrt ytrytrytryrtyrtyrt yrtyrtyrtytrytr yrtytryrtyrtyrtytr ytryrty tr ytryttry try try try trytryrt</lt-grid-item>
+</lt-grid-container>
 </div>

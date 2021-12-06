@@ -6,6 +6,7 @@ import { DropdownMenuComponent } from './dropdown-menu/dropdown-menu.component';
 import { MenuItemComponent } from './menu-item/menu-item.component';
 import { SubMenuItemComponent } from './submenu-item/submenu-item.component';
 import { SubmenuComponent } from './submenu/submenu.component';
+import { MainSubmenuComponent } from './main-submenu/main-submenu.component';
 import { EvenComponent } from '../even/even.component';
 import { LogoComponent } from '../logo/logo.component';
 
@@ -18,6 +19,7 @@ import { LogoComponent } from '../logo/logo.component';
     MenuItemComponent,
     SubMenuItemComponent,
     SubmenuComponent,
+    MainSubmenuComponent,
     EvenComponent,
     LogoComponent
   ],
@@ -27,6 +29,7 @@ import { LogoComponent } from '../logo/logo.component';
     DropdownMenuComponent,
     MenuItemComponent,
     SubMenuItemComponent,
+    MainSubmenuComponent,
     SubmenuComponent,
     LogoComponent
   ],

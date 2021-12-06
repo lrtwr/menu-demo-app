@@ -1,70 +1,28 @@
-<app-main-menu>
-  <app-menu-item>Vehicles</app-menu-item>
-  <app-menu-item>Bikes</app-menu-item>
-  <app-dropdown-menu [title]="'Vehicles'">
-    <app-dropdown-menu-item>Cars</app-dropdown-menu-item>
-    <app-dropdown-menu-item>Bushes</app-dropdown-menu-item>
-    <app-dropdown-menu-item>Trucks</app-dropdown-menu-item>
-    <app-dropdown-submenu [title]="'Roads'">
-      <app-dropdown-menu-item>Race</app-dropdown-menu-item>
-      <app-dropdown-menu-item>Gravel</app-dropdown-menu-item>
-      <app-dropdown-menu-item>Aero</app-dropdown-menu-item>
-      <app-dropdown-menu-item>Time Trial</app-dropdown-menu-item>
-    </app-dropdown-submenu>
-  </app-dropdown-menu>
-  <app-dropdown-menu [title]="'Bikes'">
-  <app-dropdown-submenu [title]="'Roads'">
-    <app-dropdown-menu-item>Race</app-dropdown-menu-item>
-    <app-dropdown-menu-item>Gravel</app-dropdown-menu-item>
-    <app-dropdown-menu-item>Aero</app-dropdown-menu-item>
-    <app-dropdown-menu-item>Time Trial</app-dropdown-menu-item>
-  </app-dropdown-submenu>
-    <app-dropdown-menu-item>MTB</app-dropdown-menu-item>
-    <app-dropdown-menu-item>City</app-dropdown-menu-item>
-  </app-dropdown-menu>
-</app-main-menu>
+<div id="container">
+<header></header>
+<lt-vertical-menu [classId]="'VerMenu'">
+<lt-logo>Logo</lt-logo>
 
+  <lt-menu-item [classId]="'VerMenu'">adgadgadg</lt-menu-item>
+  <lt-menu-item [classId]="'VerMenu'">Link A</lt-menu-item>
 
-<app-test-area></app-test-area>
+  <lt-menu-item [classId]="'VerMenu'">Link B</lt-menu-item>
+
+  <lt-submenu [classId]="'VerMenu'" [title]="'Eerste Menu'">
+    <lt-submenu-item [classId]="'VerMenu'">Link C</lt-submenu-item>
+    <lt-submenu-item [classId]="'VerMenu'">Link D</lt-submenu-item>
+    <lt-submenu [classId]="'VerMenu'" [title]="'Tweede Menu'">
+      <lt-submenu-item [classId]="'VerMenu'">Link E</lt-submenu-item>
+      <lt-submenu-item [classId]="'VerMenu'">Link F</lt-submenu-item>
+    </lt-submenu>
+    <lt-submenu [classId]="'VerMenu'" [title]="'Derde Menu'">
+      <lt-submenu-item [classId]="'VerMenu'">Link G</lt-submenu-item>
+      <lt-submenu-item [classId]="'VerMenu'">Link H</lt-submenu-item>
+    </lt-submenu>
+  </lt-submenu>
+</lt-vertical-menu>
 
 
 
 
-
-<!-- <app-cursusmenu-item [menuFor]="main">Click Me</app-cursusmenu-item>
-
-<ng-template #main>
-  <app-cursusmenu>
-    <app-cursusmenu-item [menuFor]="vehicles">Vehicles</app-cursusmenu-item>
-    <app-cursusmenu-item [menuFor]="bikes">Bikes</app-cursusmenu-item>
-  </app-cursusmenu>
-</ng-template>
-
-<ng-template #vehicles>
-  <app-cursusmenu>
-    <app-cursusmenu-item>Cars</app-cursusmenu-item>
-    <app-cursusmenu-item>Buses</app-cursusmenu-item>
-    <app-cursusmenu-item>Trucks</app-cursusmenu-item>
-  </app-cursusmenu>
-</ng-template>
-
-<ng-template #bikes>
-  <app-cursusmenu>
-    <app-cursusmenu-item [menuFor]="roadBikes">Road</app-cursusmenu-item>
-    <app-cursusmenu-item>MTB</app-cursusmenu-item>
-    <app-cursusmenu-item>City</app-cursusmenu-item>
-  </app-cursusmenu>
-</ng-template>
-
-<ng-template #roadBikes>
-  <app-cursusmenu>
-    <app-cursusmenu-item>Race</app-cursusmenu-item>
-    <app-cursusmenu-item>Gravel</app-cursusmenu-item>
-    <app-cursusmenu-item>Aero</app-cursusmenu-item>
-    <app-cursusmenu-item>Time Trial</app-cursusmenu-item>
-  </app-cursusmenu>
-</ng-template> -->
-
-
-
-
+</div>

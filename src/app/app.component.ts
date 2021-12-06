@@ -1,27 +1,28 @@
 import { Component, OnInit } from '@angular/core';
 
-declare var $: any;  
+declare var $: any;
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.sass']
+  styleUrls: ['./app.component.css']
 })
-export class AppComponent implements  OnInit{
+
+export class AppComponent implements OnInit {
   title = 'menu-demo-app';
 
-ngOnInit(){
+  ngOnInit() {
 
-  $(function () {
-    $('[data-toggle="popover"]').popover()
-  })
-
-  $(function () {
-    $('.example-popover').popover({
-      container: 'body'
+    $(function () {
+      $('[data-toggle="popover"]').popover()
     })
-  })
-}
 
+    $(function () {
+      $('.example-popover').popover({
+        container: 'body'
+      })
+    })
+
+  }
 
 }

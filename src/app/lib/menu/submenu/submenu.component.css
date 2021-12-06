@@ -1,0 +1,9 @@
+.lt-submenu{
+  position: relative;
+}
+
+.menuright{
+  top: 0;
+  left: 101%;
+  margin-top: -1px;
+}

@@ -1,22 +1,29 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-// import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { MenuModule } from './menu/menu.module';
-// import { CursusMenuModule } from './cursusmenu/cursusmenu.module';
 import { FormsModule } from '@angular/forms';
-import { TestAreaComponent } from './test-area/test-area.component'
+import { ltMenuModule } from './lib/menu/menu.module';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
+import { ContentComponent } from './content/content.component';
+import { BreadcrumbModule } from './lib/breadcrumb/breadcrumb.module';
+import { GridContainerComponent } from './later/menu/dropdown-menu/grid-container/grid-container.component';
+import { GridContainerModule } from './later/menu/dropdown-menu/grid-container/grid-container.module';
+
 @NgModule({
   declarations: [
     AppComponent,
-    TestAreaComponent
+    HeaderComponent,
+    FooterComponent,
+    ContentComponent,
+    GridContainerComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    MenuModule
-    // CursusMenuModule
-    // ,AppRoutingModule
+     ltMenuModule,
+     BreadcrumbModule,
+     GridContainerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

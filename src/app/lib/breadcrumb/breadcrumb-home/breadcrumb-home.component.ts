@@ -3,11 +3,10 @@ import { Component, OnInit, Input } from '@angular/core';
 @Component({
   selector: 'lt-breadcrumb-home',
   templateUrl: './breadcrumb-home.component.html',
-  styleUrls: ['./breadcrumb-home.component.css']
+  styles: ['']
 })
 export class BreadcrumbHomeComponent implements OnInit {
-  @Input() classId: string | undefined;
-  @Input() style: string | undefined;
+  @Input() classId: string | undefined="lt";
   @Input() id: string | undefined;
   constructor() { }
 

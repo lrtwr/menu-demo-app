@@ -1,0 +1,6 @@
+.lt-submenu-item {padding-left:10px;padding-right:10px;}
+.lt-main-submenu-item {padding-left:10px;padding-right:10px;}
+.lt-submenu{position: relative;}
+.lt-menu-down{top: 100;left: 0%;margin-top: -1px;}
+.lt-menu-right{top: 0;left: 101%;margin-top: -1px;}
+

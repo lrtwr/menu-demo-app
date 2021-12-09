@@ -1,11 +1,10 @@
 import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'SubMenu',
-  templateUrl: './submenu.component.html',
-  styles: ['']
+  selector: 'VerSubMenu',
+  templateUrl: './versubmenu.component.html',
 })
-export class SubmenuComponent implements OnInit {
+export class VerSubmenuComponent implements OnInit {
   @Input() title: string | undefined;
   @Input() classId: string | undefined="lt";
   @Input() id: string | undefined;

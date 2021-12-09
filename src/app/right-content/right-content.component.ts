@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-right-content',
+  selector: 'right-content',
   templateUrl: './right-content.component.html',
-  styleUrls: ['./right-content.component.css']
+  styles: ['']
 })
 export class RightContentComponent implements OnInit {
 

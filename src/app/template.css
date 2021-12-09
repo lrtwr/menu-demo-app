@@ -1,0 +1,42 @@
+html{
+  padding-top: 7px;
+  background-color: #4d5e85;
+  font-size: 76%;
+}
+
+body {
+  /* position: relative; */
+  margin: 0px auto;
+  width: 920px;
+  height: 97vh;
+  overflow: auto;
+  border-radius: 20px;
+  background: #fff;
+}
+
+#header{height: 80px; width: 100%;position:relative;}
+
+#left-content{
+  height: 200px;
+  width: 120px;
+  background-color: burlywood;
+}
+
+#content,#right-content,#left-content{
+  height: calc(92vh - 80px);;
+}
+
+#content{
+  width: 600px;
+  overflow: scroll;
+  background-color: rgb(121, 84, 36);
+}
+
+#right-content{
+  width: 120px;
+  background-color: burlywood;
+}
+
+#footer{
+
+}

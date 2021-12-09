@@ -1,6 +1,20 @@
-<div class="lt-submenu ">
-  <a class="nav-link  {{classId}}-submenu-item" href="#">{{title}} &blacktriangleright;</a>
-    <span class="dropdown-menu menuright {{classId}}-submenu" id="{{id}}" [ngStyle]="{style}">
+<div class="lt-submenu">
+  <a class=" {{classId}}-submenu-item lt-submenu-item" href="#">{{title}} &blacktriangleright;</a>
+    <span class="dropdown-menu lt-menu-right {{classId}}-submenu" id="{{id}}" style="flex-direction: column;display:flex;">
       <ng-content></ng-content>
     </span>
 </div>
+
+<!-- <div class="lt-submenu flex-column">
+  <a class="{{classId}}-menu-item lt-main-submenu-item" href="#" id="{{id}}">{{title}} &blacktriangledown; </a>
+    <span class="dropdown-menu lt-menu-down {{classId}}-dropdown-menu">
+      <ng-content></ng-content>
+    </span>
+</div>
+
+<div class="lt-submenu ">
+  <a class="{{classId}}-menu-item lt-main-submenu-item" href="#">{{title}} &blacktriangleright;</a>
+    <span class="dropdown-menu lt-menu-right {{classId}}-submenu" id="{{id}}">
+      <ng-content></ng-content>
+    </span>
+</div> -->

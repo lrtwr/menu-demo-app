@@ -1,35 +1,31 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { HorizontalMenuComponent } from './horizontal-menu/horizontal-menu.component';
-import { VerticalMenuComponent } from './vertical-menu/vertical-menu.component';
-import { DropdownMenuComponent } from './dropdown-menu/dropdown-menu.component';
-import { MenuItemComponent } from './menu-item/menu-item.component';
-import { SubMenuItemComponent } from './submenu-item/submenu-item.component';
+import { HorMenuComponent } from './hormenu/hormenu.component';
+import { VerMenuComponent } from './vermenu/vermenu.component';
+import { DropdownMenuComponent } from './dropdownmenu/dropdownmenu.component';
+import { MenuItemComponent, SubMenuItemComponent } from './menuitems.component';
 import { SubmenuComponent } from './submenu/submenu.component';
-import { MainSubmenuComponent } from './main-submenu/main-submenu.component';
-import { EvenComponent } from '../even/even.component';
-import { LogoComponent } from '../logo/logo.component';
-
+import { VerSubmenuComponent } from './versubmenu/versubmenu.component';
+import { LogoComponent } from './logo.component';
 
 @NgModule({
   declarations: [
-    HorizontalMenuComponent,
-    VerticalMenuComponent,
+    HorMenuComponent,
+    VerMenuComponent,
     DropdownMenuComponent,
     MenuItemComponent,
     SubMenuItemComponent,
     SubmenuComponent,
-    MainSubmenuComponent,
-    EvenComponent,
+    VerSubmenuComponent,
     LogoComponent
   ],
   exports: [
-    HorizontalMenuComponent,
-    VerticalMenuComponent,
+    HorMenuComponent,
+    VerMenuComponent,
     DropdownMenuComponent,
     MenuItemComponent,
     SubMenuItemComponent,
-    MainSubmenuComponent,
+    VerSubmenuComponent,
     SubmenuComponent,
     LogoComponent
   ],

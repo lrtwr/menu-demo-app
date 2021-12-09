@@ -24,7 +24,7 @@
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "outputPath": "dist/menu-demo-app",
-            "index": "src/index.html",
+            "index": "src/app/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
@@ -34,9 +34,9 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/app/styles.css","src/app/lt-styles.css","src/app/template.css"
             ],
-            "scripts": [ ]
+            "scripts": []
           },
           "configurations": {
             "production": {
@@ -99,10 +99,11 @@
             "inlineStyleLanguage": "css",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/app/lib/scripts"
             ],
             "styles": [
-              "src/styles.css"
+              "src/app.styles.css","src/lt-app.styles.css"
             ],
             "scripts": []
           }

@@ -1,38 +1,41 @@
 <div id="header">
-  <lt-logo>Logo</lt-logo>
-  <lt-logo>Pogo</lt-logo>
+  <div class="flex flex-direction:horizontal">aaaaa<div>bbbb</div></div>
+  <lt-logo>Logocode voor</lt-logo>
+<hormenu [classId]="'HorMenu'">
+  <lt-logo [classId]="'HorMenu'">Logocode in</lt-logo>
+  <MenuItem [classId]="'HorMenu'">Logoitem</MenuItem>
+    <MenuItem [classId]="'HorMenu'">Link A</MenuItem>
+    <MenuItem [classId]="'HorMenu'">Link B</MenuItem>
+    <dropdownmenu [classId]="'HorMenu'" [title]="'Eerste Menu'">
+      <SubMenuItem [classId]="'HorMenu'">Link C</SubMenuItem>
+      <SubMenuItem [classId]="'HorMenu'">Link D</SubMenuItem>
+      <SubMenu [classId]="'HorMenu'" [title]="'Tweede Menu'">
+        <SubMenuItem [classId]="'HorMenu'">Link E</SubMenuItem>
+        <SubMenuItem [classId]="'HorMenu'">Link F</SubMenuItem>
+      </SubMenu>
+      <SubMenu [classId]="'HorMenu'" [title]="'Derde Menu'">
+        <SubMenuItem [classId]="'HorMenu'">Link G</SubMenuItem>
+        <SubMenuItem [classId]="'HorMenu'">Link H</SubMenuItem>
+      </SubMenu>
+    </dropdownmenu>
+    <dropdownmenu [classId]="'HorMenu'" [title]="'Eerste Menu'">
+      <SubMenuItem [classId]="'HorMenu'">Link C</SubMenuItem>
+      <SubMenuItem [classId]="'HorMenu'">Link D</SubMenuItem>
+      <SubMenu [classId]="'HorMenu'" [title]="'Tweede Menu'">
+        <SubMenuItem [classId]="'HorMenu'">Link E</SubMenuItem>
+        <SubMenuItem [classId]="'HorMenu'">Link F</SubMenuItem>
+      </SubMenu>
+      <SubMenu [classId]="'HorMenu'" [title]="'Derde Menu'">
+        <SubMenuItem [classId]="'HorMenu'">Link G</SubMenuItem>
+        <SubMenuItem [classId]="'HorMenu'">Link H</SubMenuItem>
+      </SubMenu>
+    </dropdownmenu>
+  </hormenu>
 
-<lt-horizontal-menu [classId]="'HorMenu'">
-    <lt-menu-item [classId]="'HorMenu'">Link A</lt-menu-item>
-    <lt-menu-item [classId]="'HorMenu'">Link B</lt-menu-item>
-    <lt-submenu [classId]="'HorMenu'" [title]="'Eerste Menu'">
-      <lt-submenu-item [classId]="'HorMenu'">Link C</lt-submenu-item>
-      <lt-submenu-item [classId]="'HorMenu'">Link D</lt-submenu-item>
-      <lt-submenu [classId]="'HorMenu'" [title]="'Tweede Menu'">
-        <lt-submenu-item [classId]="'HorMenu'">Link E</lt-submenu-item>
-        <lt-submenu-item [classId]="'HorMenu'">Link F</lt-submenu-item>
-      </lt-submenu>
-      <lt-submenu [classId]="'HorMenu'" [title]="'Derde Menu'">
-        <lt-submenu-item [classId]="'HorMenu'">Link G</lt-submenu-item>
-        <lt-submenu-item [classId]="'HorMenu'">Link H</lt-submenu-item>
-      </lt-submenu>
-    </lt-submenu>
-    <lt-dropdown-menu [classId]="'HorMenu'" [title]="'Eerste Menu'">
-      <lt-submenu-item [classId]="'HorMenu'">Link C</lt-submenu-item>
-      <lt-submenu-item [classId]="'HorMenu'">Link D</lt-submenu-item>
-      <lt-submenu [classId]="'HorMenu'" [title]="'Tweede Menu'">
-        <lt-submenu-item [classId]="'HorMenu'">Link E</lt-submenu-item>
-        <lt-submenu-item [classId]="'HorMenu'">Link F</lt-submenu-item>
-      </lt-submenu>
-      <lt-submenu [classId]="'HorMenu'" [title]="'Derde Menu'">
-        <lt-submenu-item [classId]="'HorMenu'">Link G</lt-submenu-item>
-        <lt-submenu-item [classId]="'HorMenu'">Link H</lt-submenu-item>
-      </lt-submenu>
-    </lt-dropdown-menu>
-
-  </lt-horizontal-menu>
   <lt-breadcrumb>
     <lt-breadcrumb-home>Home</lt-breadcrumb-home>
+    <lt-breadcrumb-item>Admin</lt-breadcrumb-item>
+    <lt-breadcrumb-item>Account</lt-breadcrumb-item>
     <lt-breadcrumb-item>Admin</lt-breadcrumb-item>
     <lt-breadcrumb-item>Account</lt-breadcrumb-item>
   </lt-breadcrumb>

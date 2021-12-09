@@ -7,7 +7,6 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { ContentComponent } from './content/content.component';
 import { BreadcrumbModule } from './lib/breadcrumb/breadcrumb.module';
-import { GridContainerModule } from './lib/grid-container/grid-container.module';
 import { LeftContentComponent } from './left-content/left-content.component';
 import { RightContentComponent } from './right-content/right-content.component';
 
@@ -24,8 +23,7 @@ import { RightContentComponent } from './right-content/right-content.component';
     BrowserModule,
     FormsModule,
      ltMenuModule,
-     BreadcrumbModule,
-     GridContainerModule
+     BreadcrumbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

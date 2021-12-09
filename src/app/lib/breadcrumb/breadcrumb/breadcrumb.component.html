@@ -1,5 +1,11 @@
-<nav>
-  <ol class="breadcrumb {{classId}}-breadcrumb" id="{{id}}">
+<style>
+  .breadcrumb{
+    background-color: unset;
+  }
+</style>
+
+<div class="nav">
+  <div class="breadcrumb {{classId}}-breadcrumb" id="{{id}}">
     <ng-content></ng-content>
-  </ol>
-</nav>
+  </div>
+</div>

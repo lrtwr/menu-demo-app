@@ -1,18 +1,16 @@
 import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'SubMenu',
-  templateUrl: './submenu.component.html',
+  selector: 'VerMenu',
+  templateUrl: './vermenu.component.html',
   styles: ['']
 })
-export class SubmenuComponent implements OnInit {
-  @Input() title: string | undefined;
+export class VerMenuComponent implements OnInit {
   @Input() classId: string | undefined="lt";
   @Input() id: string | undefined;
- constructor() { }
+constructor() { }
 
   ngOnInit(): void {
-
   }
 
 }

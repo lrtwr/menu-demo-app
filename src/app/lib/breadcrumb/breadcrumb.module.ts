@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
+import { LtBreadcrumbComponent } from './breadcrumb/breadcrumb.component';
 import { BreadcrumbItemComponent } from './breadcrumb-item/breadcrumb-item.component';
 import { BreadcrumbHomeComponent } from './breadcrumb-home/breadcrumb-home.component';
 
 @NgModule({
   declarations: [
-    BreadcrumbComponent,
+    LtBreadcrumbComponent,
     BreadcrumbItemComponent,
     BreadcrumbHomeComponent
   ],
@@ -15,8 +15,8 @@ import { BreadcrumbHomeComponent } from './breadcrumb-home/breadcrumb-home.compo
   ],
   exports: [
     BreadcrumbItemComponent,
-    BreadcrumbComponent,
+    LtBreadcrumbComponent,
     BreadcrumbHomeComponent
   ]
 })
-export class BreadcrumbModule { }
+export class LtBreadcrumbModule { }

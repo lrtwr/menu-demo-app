@@ -5,7 +5,7 @@ import { Component, OnInit, Input } from '@angular/core';
   templateUrl: './breadcrumb.component.html',
   styles: ['']
 })
-export class BreadcrumbComponent implements OnInit {
+export class LtBreadcrumbComponent implements OnInit {
   @Input() classId: string | undefined="lt";
   @Input() id: string | undefined;
   constructor() { }

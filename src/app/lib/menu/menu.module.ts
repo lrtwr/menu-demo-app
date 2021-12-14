@@ -33,4 +33,7 @@ import { LogoComponent } from './logo.component';
     CommonModule
   ]
 })
-export class ltMenuModule { }
+export class ltMenuModule {
+
+
+}

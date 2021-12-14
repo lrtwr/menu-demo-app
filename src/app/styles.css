@@ -1,34 +1,48 @@
-.HorMenu-submenu-item{
+.header-grid-container {
+  display: grid;
+  grid-template-columns: 100px auto;
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+.content-grid-container {
+  display: grid;
+  grid-template-columns: 150px 600px auto;
+  grid-gap: 10px;
+  /* display:inline-flex; */
+}
+
+.HorMenu-hor-submenu-item{
   color: rgb(255, 255, 255);
 }
 
-.HorMenu-menu-item {
+.HorMenu-hor-menu-item {
   background:rgb(109, 58, 58);
   color: rgb(255, 255, 255);
 }
 
-.HorMenu-submenu{
+.HorMenu-hor-submenu{
   background: rgb(6, 2, 22);
 }
 
-.HorMenu-dropdown-menu{
+.HorMenu-hor-dropdown-menu{
   background: rgb(65, 24, 24);
 }
 
-.VerMenu-submenu{
+.VerMenu-ver-submenu{
   background: rgb(6, 2, 22);
   color: rgb(255, 255, 255);
 }
 
-.VerMenu-dropdown-menu{
+.VerMenu-ver-dropdown-menu{
   background: rgb(65, 24, 24);
 }
 
-.VerMenu-submenu-item{
+.VerMenu-ver-submenu-item{
   color: rgb(18, 63, 46);
 }
 
-.VerMenu-menu-item{
+.VerMenu-ver-menu-item{
   color: rgb(58, 22, 22);
 }
 

@@ -1,5 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 
+declare var $: any;
+
 @Component({
   selector: 'hormenu',
   templateUrl: './hormenu.component.html'

@@ -10,11 +10,32 @@
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
-          "style": "css"
+          "style": "css",
+          "skipTests": true
         },
         "@schematics/angular:application": {
           "strict": true
+        },
+        "@schematics/angular:class": {
+          "skipTests": true
+        },
+        "@schematics/angular:directive": {
+          "skipTests": true
+        },
+        "@schematics/angular:pipe": {
+          "skipTests": true
+        },
+        "@schematics/angular:service": {
+          "skipTests": true
+        },
+        "@schematics/angular:module": {
+          "commonModule": true,
+          "flat": false,
+          "module": "",
+          "routing": true,
+          "routingScope": "Child"
         }
+
       },
       "root": "",
       "sourceRoot": "src",
@@ -103,7 +124,8 @@
               "src/app/lib/scripts"
             ],
             "styles": [
-              "src/app.styles.css","src/lt-app.styles.css"
+              "src/app.styles.css",
+              "src/lt-app.styles.css"
             ],
             "scripts": []
           }

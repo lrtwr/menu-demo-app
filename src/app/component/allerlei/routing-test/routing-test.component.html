@@ -1,0 +1,33 @@
+<p>routing-test works!</p>
+<div *ngFor="let rte of tLijst">
+    <div *ngFor="let item of rte | keyvalue">
+      <div *ngIf="item.key=='children'">
+
+
+        <div *ngFor="let rtl of item.value">
+          <div *ngFor="let item2 of rtl | keyvalue">
+            <div *ngIf="item2.key=='children'">
+
+              <!-- <div *ngFor="let rts in item2.value">
+                <div *ngFor="let item2 of rts | keyvalue">
+                    <h1>{{ item2.key }} - {{ item2.value }}</h1>
+                </div>
+              </div> -->
+Children!
+
+            </div>
+            <div *ngIf="item2.key!='children'">
+              <h3>{{ item2.key }} - {{ item2.value }}</h3>
+            </div>
+          </div>
+        </div>
+
+
+
+
+      </div>
+      <div *ngIf="item.key!='children'">
+        {{ item.key }} - {{ item.value }}
+      </div>
+    </div>
+  </div>

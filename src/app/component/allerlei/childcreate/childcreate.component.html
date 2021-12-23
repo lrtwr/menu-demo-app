@@ -1,0 +1,14 @@
+Maak een component dynamisch aan in een andere component!!!
+<p>
+<button type="button" (click)="addChild()">
+    I am Parent, Click to create a Child
+</button>
+</p>
+<p>
+<button type="button" (click)="deleteChild()">
+    I am Parent, Click to delete a Child
+</button>
+</p>
+<div>
+	<ng-template #viewContainerRef></ng-template>
+</div>

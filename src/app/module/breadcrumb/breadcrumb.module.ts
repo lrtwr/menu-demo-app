@@ -1,13 +1,28 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { BreadcrumbRoutingModule } from './breadcrumb-routing.module';
 import { UserComponent } from './user/user.component';
 import { UserListComponent } from './user-list/user-list.component';
 import { HomeComponent } from './home/home.component';
 import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
 import { RouterModule, Routes } from '@angular/router';
+import { UserResolverService } from './service/user-resolver.service';
 
 
+const routes: Routes = [
+ {
+   path: 'users',
+   component: UserListComponent,
+   data: { breadcrumb: 'Users' },
+   children: [
+     {
+       path: ':id',
+       component: UserComponent,
+       data: { breadcrumb: (data: any) => `${data.user.name}` },
+       resolve: { user: UserResolverService }
+     }
+   ]
+ }
+];
 
 @NgModule({
   declarations: [
@@ -18,13 +33,14 @@ import { RouterModule, Routes } from '@angular/router';
   ],
   imports: [
     CommonModule,
-    BreadcrumbRoutingModule,
+    [RouterModule.forChild(routes)]
   ],
   exports: [
     BreadcrumbComponent,
     HomeComponent,
     UserComponent,
-    UserListComponent
+    UserListComponent,
+    [RouterModule]
   ]
 })
 export class BreadcrumbModule { }

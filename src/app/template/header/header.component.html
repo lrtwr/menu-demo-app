@@ -1,49 +1,35 @@
 <div id="header">
   <div class="header-grid-container">
-        <HorLogo>&clubs;Leertouwer Test Environment</HorLogo>
+        <!-- <HorLogo><a routerLink="home">&clubs;Leertouwer Test Environment</a></HorLogo> -->
+        <HorLogo [routerLink]="''">&clubs;Leertouwer Test Environment</HorLogo>
+
+
 
       <div class="" style="text-align: right;">
+        <HorMenu [classId]="'HrMenu'">
+          <HorMenuItem [routerLink]="'staging'" [classId]="'HrMenu'">Staging</HorMenuItem>
+          <HorMenuItem [routerLink]="'dezesite'" [classId]="'HrMenu'">Deze Site</HorMenuItem>
 
-        <HorMenu [classId]="'HorMenu'">
-          <HorLogo [classId]="'HorMenu'">Logocode in</HorLogo>
-          <HorMenuItem [classId]="'HorMenu'">Logoitem</HorMenuItem>
-          <HorMenuItem [classId]="'HorMenu'">Link A</HorMenuItem>
-          <HorMenuItem [classId]="'HorMenu'">Link B</HorMenuItem>
-          <HorDropDownMenu [classId]="'HorMenu'" [title]="'Eerste Menu'">
-            <HorSubMenuItem [classId]="'HorMenu'">Link C</HorSubMenuItem>
-            <HorSubMenuItem [classId]="'HorMenu'">Link D</HorSubMenuItem>
-            <HorSubMenu [classId]="'HorMenu'" [title]="'Tweede Menu'">
-              <HorSubMenuItem [classId]="'HorMenu'">Link E</HorSubMenuItem>
-              <HorSubMenuItem [classId]="'HorMenu'">Link F</HorSubMenuItem>
-            </HorSubMenu>
-            <HorSubMenu [classId]="'HorMenu'" [title]="'Derde Menu'">
-              <HorSubMenuItem [classId]="'HorMenu'">Link G</HorSubMenuItem>
-              <HorSubMenuItem [classId]="'HorMenu'">Link H</HorSubMenuItem>
+          <HorDropDownMenu [classId]="'HrMenu'" [title]="'Bootstrap'">
+            <HorSubMenuItem  [routerLink]="'allerlei/childcreate'" [classId]="'HrMenu'">Create a child</HorSubMenuItem>
+            <HorSubMenuItem [routerLink]="'allerlei/routingtest'" [classId]="'HrMenu'">Routing test</HorSubMenuItem>
+          </HorDropDownMenu>
+          <HorDropDownMenu [classId]="'HrMenu'" [title]="'Allerlei'">
+            <HorSubMenuItem  [routerLink]="'allerlei/childcreate'" [classId]="'HrMenu'">Create a child</HorSubMenuItem>
+            <HorSubMenuItem [routerLink]="'allerlei/routingtest'" [classId]="'HrMenu'">Routing test</HorSubMenuItem>
+            <HorSubMenuItem [routerLink]="'allerlei/users'" [classId]="'HrMenu'">Users</HorSubMenuItem>
+          </HorDropDownMenu>
+          <HorDropDownMenu [classId]="'HrMenu'" [title]="'Eerste Menu'">
+            <HorSubMenuItem [classId]="'HrMenu'">Link C</HorSubMenuItem>
+            <HorSubMenuItem [classId]="'HrMenu'">Link D</HorSubMenuItem>
+            <HorSubMenu [classId]="'HrMenu'" [title]="'Tweede Menu'">
+              <HorSubMenuItem [classId]="'HrMenu'">Link E</HorSubMenuItem>
+              <HorSubMenuItem [classId]="'HrMenu'">Link F</HorSubMenuItem>
             </HorSubMenu>
           </HorDropDownMenu>
-          <HorDropDownMenu [classId]="'HorMenu'" [title]="'Eerste Menu'">
-            <HorSubMenuItem [classId]="'HorMenu'">Link C</HorSubMenuItem>
-            <HorSubMenuItem [classId]="'HorMenu'">Link D</HorSubMenuItem>
-            <HorSubMenu [classId]="'HorMenu'" [title]="'Tweede Menu'">
-              <HorSubMenuItem [classId]="'HorMenu'">Link E</HorSubMenuItem>
-              <HorSubMenuItem [classId]="'HorMenu'">Link F</HorSubMenuItem>
-            </HorSubMenu>
-            <HorSubMenu [classId]="'HorMenu'" [title]="'Derde Menu'">
-              <HorSubMenuItem [classId]="'HorMenu'">Link G</HorSubMenuItem>
-              <HorSubMenuItem [classId]="'HorMenu'">Link H</HorSubMenuItem>
-            </HorSubMenu>
-          </HorDropDownMenu>
+          <HorMenuItem [routerLink]="'about'"    [classId]="'HrMenu'">About</HorMenuItem>
         </HorMenu>
       </div>
-
-
-
-<lt-breadcrumb>
-  <lt-breadcrumb-home>Home</lt-breadcrumb-home>
-  <lt-breadcrumb-item>Action 1</lt-breadcrumb-item>
-  <lt-breadcrumb-item>Action 2</lt-breadcrumb-item>
-  <lt-breadcrumb-item>Action 3</lt-breadcrumb-item>
-</lt-breadcrumb>
 
 <app-breadcrumb></app-breadcrumb>
 </div>

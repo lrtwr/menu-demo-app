@@ -13,7 +13,14 @@ export class GlobalObjects {
   public static AppMem: DynamicObject ={}
 }
 
-
+export interface PageObject {
+  path?:string;
+  routerLink:string;
+  children:PageObject[];
+  breadcrumb:string;
+  active:boolean;
+  [k: string]: any;
+}
 
 
 

@@ -1,48 +1,19 @@
-.header-grid-container {
-  display: grid;
-  grid-template-columns: 100px auto;
-  grid-gap: 10px;
-  padding: 10px;
-}
 
-.content-grid-container {
-  display: grid;
-  grid-template-columns: 150px 600px auto;
-  grid-gap: 10px;
-  /* display:inline-flex; */
-}
 
-.HorMenu-hor-submenu-item{
-  color: rgb(255, 255, 255);
-}
+/* .HorMenu-hor-menu{background:rgb(36, 2, 2);} */
+.HrMenu-hor-menu-item {color: rgb(14, 2, 15);}
+.HrMenu-hor-submenu{background: rgb(236, 226, 222);}
+.HrMenu-hor-submenu-item{color: rgb(3, 27, 5);}
 
-.HorMenu-hor-menu-item {
-  background:rgb(109, 58, 58);
-  color: rgb(255, 255, 255);
-}
+.HrMenu-hor-logo{width:300px; color:rgb(81, 71, 138);background-color: rgb(64, 37, 66);}
+.lt-hor-menu-item{width:300px; color:rgb(228, 196, 196);background-color: rgb(28, 28, 37);}
 
-.HorMenu-hor-submenu{
-  background: rgb(6, 2, 22);
-}
+/* .VerMenu-ver-menu{background: rgb(6, 2, 22);} */
+.VerMenu-ver-menu-item{color: rgb(157, 221, 174);}
+.VerMenu-ver-submenu{background: rgb(231, 229, 219);}
+.VerMenu-ver-submenu-item{color: rgb(13, 6, 43);}
 
-.HorMenu-hor-dropdown-menu{
-  background: rgb(65, 24, 24);
-}
 
-.VerMenu-ver-submenu{
-  background: rgb(6, 2, 22);
-  color: rgb(255, 255, 255);
-}
 
-.VerMenu-ver-dropdown-menu{
-  background: rgb(65, 24, 24);
-}
 
-.VerMenu-ver-submenu-item{
-  color: rgb(18, 63, 46);
-}
-
-.VerMenu-ver-menu-item{
-  color: rgb(58, 22, 22);
-}
 

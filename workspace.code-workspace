@@ -1,0 +1,31 @@
+{
+	"folders": [
+		{
+			"name": "menu-demo-app",
+			"path": "."
+		},
+		{
+			"name": "app",
+			"path": "src\\app"
+		},
+		{
+			"name": "component",
+			"path": "src\\app\\component"
+		},
+		{
+			"name": "lib",
+			"path": "src\\app\\lib"
+		},
+		{
+			"name": "module",
+			"path": "src\\app\\module"
+		},
+		{
+			"name": "template",
+			"path": "src\\app\\template"
+		}
+	],
+	"settings": {
+		"js/ts.implicitProjectConfig.experimentalDecorators": true
+	}
+}

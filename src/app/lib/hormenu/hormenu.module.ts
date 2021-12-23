@@ -2,9 +2,9 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HorMenuComponent } from './hormenu/hormenu.component';
 import { HorDropDownMenuComponent } from './dropdownmenu/dropdownmenu.component';
-import { HorMenuItemComponent, HorSubMenuItemComponent } from './hormenuitems.component';
+import { HorMenuItemComponent, HorSubMenuItemComponent, HorLogoComponent } from './hormenuitems.component';
 import { HorSubmenuComponent } from './submenu/submenu.component';
-import { HorLogoComponent } from './horlogo.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -13,7 +13,6 @@ import { HorLogoComponent } from './horlogo.component';
     HorMenuItemComponent,
     HorSubMenuItemComponent,
     HorSubmenuComponent,
-
     HorLogoComponent
   ],
   exports: [
@@ -25,10 +24,10 @@ import { HorLogoComponent } from './horlogo.component';
     HorLogoComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule
   ]
 })
+
 export class HorMenuModule {
-
-
 }

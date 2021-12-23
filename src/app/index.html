@@ -7,7 +7,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 <script>
   $(function (){
-    $('.ver-submenu a').on("click", function(e){
+    $('.submenuA').on("click", function(e){
       if($(this).next('span').css("display")=="block"){
        $(this).next('span').toggle();
       }
@@ -19,28 +19,8 @@
       e.stopPropagation();
       e.preventDefault();
     });
-    $('.ver-menu-item-click').on("click", function(e){
-     $('.ver-submenu a').next('span').hide();
-    });
-  });
-  </script>
-
-<script>
-  $(function (){
-    $('.hor-submenu a').on("click", function(e){
-      if($(this).next('span').css("display")=="block"){
-       $(this).next('span').toggle();
-      }
-      else{
-       $(this).parent().parent().find('span').hide();
-     $(this).parent().parent().parent().find('span').hide();
-     $(this).next('span').toggle();
-      }
-      e.stopPropagation();
-      e.preventDefault();
-    });
-    $('.hor-menu-item-click').on("click", function(e){
-     $('.hor-submenu a').next('span').hide();
+    $('.menu-item-click').on("click", function(e){
+     $('.submenuA').next('span').hide();
     });
   });
   </script>

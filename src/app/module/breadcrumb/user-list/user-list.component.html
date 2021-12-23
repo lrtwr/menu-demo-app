@@ -2,8 +2,10 @@
 
 <ul>
   <li *ngFor="let user of users">
-    <a routerLink="/breadcrumb/breadcrumbusers/{{ user.id }}">{{ user.name }}</a>
+    <a routerLink="/allerlei/users/{{ user.id }}">{{ user.name }}</a>
   </li>
 </ul>
 
 <router-outlet></router-outlet>
+
+

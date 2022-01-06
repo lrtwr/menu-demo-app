@@ -1,0 +1,11 @@
+<p>form-test works!</p>
+
+<p>lengte: {{lengte}}</p>
+  <div *ngFor="let item of database">
+    <p>{{item.id}}&nbsp;&nbsp;{{item.name}}&nbsp;&nbsp;{{item.genre}}&nbsp;&nbsp;{{item.birthdate.toString()| pipetest:2}}</p>
+  </div>
+<!-- <ul>
+    <li *ngFor="let item of dlist">
+      <p>{{item.id}}&nbsp;&nbsp;{{item.name}}&nbsp;&nbsp;{{item.genre}}&nbsp;&nbsp;{{item.birthdate}}</p>
+    </li>
+  </ul> -->

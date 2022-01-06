@@ -13,12 +13,12 @@
 			"path": "src\\app\\component"
 		},
 		{
-			"name": "lib",
-			"path": "src\\app\\lib"
-		},
-		{
 			"name": "module",
 			"path": "src\\app\\module"
+		},
+		{
+			"name": "lib",
+			"path": "src\\app\\lib"
 		},
 		{
 			"name": "template",

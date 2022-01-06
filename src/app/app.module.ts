@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
@@ -22,6 +23,7 @@ import { DezeSiteComponent } from './component/deze-site/deze-site.component';
 import { StagingComponent } from './component/staging/staging.component';
 import { AboutComponent } from './component/standaard/about/about.component';
 import { RoutingTestComponent } from './component/allerlei/routing-test/routing-test.component';
+import { FormTestModule} from './module/form-test/form-test.module';
 
 @NgModule({
   declarations: [
@@ -39,8 +41,10 @@ import { RoutingTestComponent } from './component/allerlei/routing-test/routing-
     DezeSiteComponent,
     PageNotFoundComponent,
     RoutingTestComponent,
+   
   ],
   imports: [
+    CommonModule,
     BrowserModule,
     HttpClientModule,
     FormsModule,
@@ -49,7 +53,8 @@ import { RoutingTestComponent } from './component/allerlei/routing-test/routing-
     BreadcrumbModule,
     HorMenuModule,
     VerMenuModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    FormTestModule
   ],
   providers: [],
   bootstrap: [AppComponent]

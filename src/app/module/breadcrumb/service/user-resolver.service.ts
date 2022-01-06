@@ -10,12 +10,10 @@ import { User } from "../model/user.model";
 })
 export class UserResolverService implements Resolve<User> {
 
-  constructor(private readonly http: HttpClient) {
-  }
+  constructor(private readonly http: HttpClient) {}
 
   resolve(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): Observable<User> {
     const id = route.params['id'];
     return this.http.get<User>(`https://jsonplaceholder.typicode.com/users/${id}`);
   }
-
 }
